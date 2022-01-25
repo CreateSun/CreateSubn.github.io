@@ -45,8 +45,7 @@
 <div class="index-container">
     
     <div class="index-left">
-        
-<div class="nav" id="nav">
+        <div class="nav" id="nav">
     <div class="avatar-name">
         <div class="avatar radius">
             <img src="/img/12138.jpg" />
@@ -58,44 +57,44 @@
     <div class="contents" id="nav-content">
         <ul>
             <li >
-                <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>홈</span>
-                </a>
+                        <a href="/">
+                            <i class="iconfont icon-shouye1"></i>
+                            <span>nav.home</span>
+                        </a>
             </li>
             <li >
-                <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>태그</span>
-                </a>
+                        <a href="/tags">
+                            <i class="iconfont icon-biaoqian1"></i>
+                            <span>nav.tags</span>
+                        </a>
             </li>
             <li >
-                <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>아카이브</span>
-                </a>
+                        <a href="/archives">
+                            <i class="iconfont icon-guidang2"></i>
+                            <span>nav.archives</span>
+                        </a>
             </li>
             <li >
-                <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>about</span>
-                </a>
+                        <a href="/about/">
+                            <i class="iconfont icon-guanyu2"></i>
+                            <span>nav.about</span>
+                        </a>
             </li>
             
-            <li>
-                <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
-                    <span>검색</span>
-                </a>
-            </li>
-            
+                <li>
+                    <a id="search">
+                        <i class="iconfont icon-sousuo1"></i>
+                        <span>nav.search</span>
+                    </a>
+                </li>
+                
         </ul>
     </div>
     
         <div id="toc" class="toc-article">
     
 </div>
-    
+            
 </div>
 
 
@@ -103,15 +102,14 @@
     <div class="search-container">
         <div class="search-input">
             <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input"/>
-            <span id="begin-search">검색</span>
+            <input id="search-input" />
+            <span id="begin-search">search.search</span>
         </div>
         <div class="search-result-container" id="search-result-container">
 
         </div>
     </div>
 </div>
-
         <div class="index-about-mobile">
             <i> 崎嵚历落从人笑，涟漪微漾伴疏狂 </i>
         </div>
@@ -119,34 +117,28 @@
     
     <div class="index-middle">
         <!-- Main Content -->
-        --- layout: layout ---
-<style>
+        <style>
+    body {
+        background-color: rgba(255, 248, 220, 0.5);
+    }
+    
     .poetry-container {
         background-color: rgba(255, 248, 220, 0.5);
         padding-top: 43px;
-        margin-top: -43px;
         text-align: center;
     }
     
     .poetry-container .poetry-content {
         writing-mode: vertical-lr;
+        border-radius: 15px;
         -ms-writing-mode: tb-lr;
-        margin: 100px auto 0;
+        margin: 0 auto;
         overflow: auto;
         max-width: 90%;
-        max-height: 700px;
+        max-height: 60vh;
         display: inline-block;
         text-align: left;
         padding: 5px 15px 30px;
-    }
-    
-    .poetry-head {
-        width: 100%;
-        height: 56px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: black;
     }
     
     .poetry-container .poetry-content h2 {
@@ -178,10 +170,11 @@
     
     @media screen and (max-width: 768px) {
         .poetry-container .poetry-content {
-            max-height: 480px;
+            max-height: 70;
             max-width: 100%;
             margin: 80px auto 0;
             padding-bottom: 10px;
+            writing-mode: horizontal-tb;
         }
         .poetry-container .poetry-content p {
             font-size: 16px;
@@ -214,8 +207,6 @@
     }
 </style>
 <div class="poetry-container">
-    <!--导航黑色-->
-    <div class="poetry-head"></div>
     <!--主内容-->
     <div class="poetry-content">
         <h2>

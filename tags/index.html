@@ -60,32 +60,32 @@
             <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
+                    <span>홈</span>
                 </a>
             </li>
             <li  class=active >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
+                    <span>태그</span>
                 </a>
             </li>
             <li >
                 <a href="/archives">
                     <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
+                    <span>아카이브</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
+                    <span>about</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
                     <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
+                    <span>검색</span>
                 </a>
             </li>
             
@@ -100,7 +100,7 @@
         <div class="search-input">
             <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
             <input id="search-input"/>
-            <span id="begin-search">search</span>
+            <span id="begin-search">검색</span>
         </div>
         <div class="search-result-container" id="search-result-container">
 
@@ -116,151 +116,192 @@
     <div class="index-middle">
         <!-- Main Content -->
         <div id='tag_cloud' class="tags">
+
+    <!-- 标签云1 -->
+    <div id='tag_cloud' class="tags">
+        
+            <a href="#Heart" title="Heart" rel="1">
+                Heart
+            </a>
+            
+            <a href="#人生 heart" title="人生 heart" rel="1">
+                人生 heart
+            </a>
+            
+            <a href="#日常" title="日常" rel="1">
+                日常
+            </a>
+            
+            <a href="#Soul" title="Soul" rel="1">
+                Soul
+            </a>
+            
+            <a href="#Heart Soul" title="Heart Soul" rel="1">
+                Heart Soul
+            </a>
+            
+            <a href="#Soul Heart 人生" title="Soul Heart 人生" rel="1">
+                Soul Heart 人生
+            </a>
+            
+    </div>
+    <!-- 标签云2 -->
     
-    <a href="#日常" title="日常" rel="1">日常</a>
-    
-    <a href="#Heart" title="Heart" rel="1">Heart</a>
-    
-    <a href="#Heart Soul" title="Heart Soul" rel="1">Heart Soul</a>
-    
-    <a href="#人生 heart" title="人生 heart" rel="1">人生 heart</a>
-    
-    <a href="#Soul Heart 人生" title="Soul Heart 人生" rel="1">Soul Heart 人生</a>
-    
-    <a href="#Soul" title="Soul" rel="1">Soul</a>
-    
+        <a href="#Heart" title="Heart" rel="1">
+            Heart
+        </a>
+        
+        <a href="#人生 heart" title="人生 heart" rel="1">
+            人生 heart
+        </a>
+        
+        <a href="#日常" title="日常" rel="1">
+            日常
+        </a>
+        
+        <a href="#Soul" title="Soul" rel="1">
+            Soul
+        </a>
+        
+        <a href="#Heart Soul" title="Heart Soul" rel="1">
+            Heart Soul
+        </a>
+        
+        <a href="#Soul Heart 人生" title="Soul Heart 人生" rel="1">
+            Soul Heart 人生
+        </a>
+        
 </div>
 
 <!-- 标签列表 -->
 
 
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="日常">
-                    <span class="tag-text">日常</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2020/04/05/My-first-post/">
-            <h2 class="post-title">
-                博客搭建完成
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Heart">
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Heart">
                     <span class="tag-text">Heart</span>
-                </span>
-    
-    <!-- <li class="listing-item">
+        </span>
+        
+            <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
-    <div class="post-preview">
-        <a href="/2020/08/05/我喜欢过两个女孩，一个是你，另一个也是你/">
-            <h2 class="post-title">
-                我喜欢过两个女孩，一个是你，另一个也是你
-            </h2>
+            <div class="post-preview">
+                <a href="/2020/08/05/我喜欢过两个女孩，一个是你，另一个也是你/">
+                    <h2 class="post-title">
+                        我喜欢过两个女孩，一个是你，另一个也是你
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
             
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Heart Soul">
-                    <span class="tag-text">Heart Soul</span>
-                </span>
-    
-    <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-    <div class="post-preview">
-        <a href="/2020/07/25/浮世三千/">
-            <h2 class="post-title">
-                浮世三千
-            </h2>
-            
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-    </div>
-    
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="人生 heart">
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="人生 heart">
                     <span class="tag-text">人生 heart</span>
-                </span>
-    
-    <!-- <li class="listing-item">
+        </span>
+        
+            <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
-    <div class="post-preview">
-        <a href="/2020/07/27/石凳/">
-            <h2 class="post-title">
-                生与死
-            </h2>
+            <div class="post-preview">
+                <a href="/2020/07/27/石凳/">
+                    <h2 class="post-title">
+                        生与死
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
             
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Soul Heart 人生">
-                    <span class="tag-text">Soul Heart 人生</span>
-                </span>
-    
-    <!-- <li class="listing-item">
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="日常">
+                    <span class="tag-text">日常</span>
+        </span>
+        
+            <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
-    <div class="post-preview">
-        <a href="/2020/07/25/老男孩/">
-            <h2 class="post-title">
-                老男孩
-            </h2>
+            <div class="post-preview">
+                <a href="/2020/04/05/My-first-post/">
+                    <h2 class="post-title">
+                        博客搭建完成
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
             
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
-</div>
-
-<div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="Soul">
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Soul">
                     <span class="tag-text">Soul</span>
-                </span>
-    
-    <!-- <li class="listing-item">
+        </span>
+        
+            <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
-    <div class="post-preview">
-        <a href="/2020/05/27/裤子/">
-            <h2 class="post-title">
-                裤子
-            </h2>
+            <div class="post-preview">
+                <a href="/2020/05/27/裤子/">
+                    <h2 class="post-title">
+                        裤子
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
             
-        </a>
-        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
     </div>
     
-</div>
-
-
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Heart Soul">
+                    <span class="tag-text">Heart Soul</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2020/07/25/浮世三千/">
+                    <h2 class="post-title">
+                        浮世三千
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Soul Heart 人生">
+                    <span class="tag-text">Soul Heart 人生</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2020/07/25/老男孩/">
+                    <h2 class="post-title">
+                        老男孩
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
     </div>
 </div>
 

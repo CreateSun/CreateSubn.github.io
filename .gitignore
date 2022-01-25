@@ -1,2 +1,2 @@
-** 忽略所有myblog下的文件 **
+# 忽略所有myblog下的文件
 /myblog/*

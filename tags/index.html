@@ -52,6 +52,35 @@
         <div class="name">
             <i>Create Sun</i>
         </div>
+        <ul class="list-inline text-center" style="padding-bottom: 1rem;">
+            
+                    
+                        <li style="background: #06f;">
+                            <a target="_blank" href="https://www.zhihu.com/people/la-la-la-chong-tai-yang-40">
+                                <span class="fa-stack fa-lg">
+                                     <i class="iconfont icon-zhihu"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+
+                            
+
+                                    
+
+                                            
+                                                <li style="background: #6e5494;">
+                                                    <a target="_blank" href="https://github.com/CreateSun">
+                                                        <span class="fa-stack fa-lg">
+                                    <i class="iconfont icon-github"></i>
+                                </span>
+                                                    </a>
+                                                </li>
+                                                
+
+                                                    
+
+        </ul>
     </div>
     <div class="contents" id="nav-content">
         <ul>
@@ -173,12 +202,8 @@
                 日常
             </a>
             
-            <a href="#Heart" title="Heart" rel="3">
-                Heart
-            </a>
-            
-            <a href="#Soul" title="Soul" rel="3">
-                Soul
+            <a href="#诗词" title="诗词" rel="1">
+                诗词
             </a>
             
             <a href="#scrapy" title="scrapy" rel="2">
@@ -193,16 +218,8 @@
                 网易新闻
             </a>
             
-            <a href="#python" title="python" rel="1">
-                python
-            </a>
-            
-            <a href="#框架" title="框架" rel="1">
-                框架
-            </a>
-            
-            <a href="#诗词" title="诗词" rel="1">
-                诗词
+            <a href="#Heart" title="Heart" rel="3">
+                Heart
             </a>
             
             <a href="#算法" title="算法" rel="1">
@@ -213,12 +230,24 @@
                 洗牌算法
             </a>
             
+            <a href="#Soul" title="Soul" rel="3">
+                Soul
+            </a>
+            
             <a href="#人生" title="人生" rel="2">
                 人生
             </a>
             
             <a href="#heart" title="heart" rel="1">
                 heart
+            </a>
+            
+            <a href="#python" title="python" rel="1">
+                python
+            </a>
+            
+            <a href="#框架" title="框架" rel="1">
+                框架
             </a>
             
     </div>
@@ -240,6 +269,316 @@
                 <a href="/2020/04/05/My-first-post/">
                     <h2 class="post-title">
                         博客搭建完成
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="诗词">
+                    <span class="tag-text">诗词</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/26/临江仙·夜饮东坡醒复醉/">
+                    <h2 class="post-title">
+                        临江仙·夜饮东坡醒复醉 苏轼
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="scrapy">
+                    <span class="tag-text">scrapy</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy爬取网易新闻/">
+                    <h2 class="post-title">
+                        scrapy框架爬取网易新闻
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy框架学习笔记/">
+                    <h2 class="post-title">
+                        scrapy框架学习笔记
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="爬虫">
+                    <span class="tag-text">爬虫</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy爬取网易新闻/">
+                    <h2 class="post-title">
+                        scrapy框架爬取网易新闻
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy框架学习笔记/">
+                    <h2 class="post-title">
+                        scrapy框架学习笔记
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="网易新闻">
+                    <span class="tag-text">网易新闻</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy爬取网易新闻/">
+                    <h2 class="post-title">
+                        scrapy框架爬取网易新闻
                     </h2>
                     
                 </a>
@@ -430,8 +769,8 @@
     </div>
     
     <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="Soul">
-                    <span class="tag-text">Soul</span>
+        <span class="fa fa-tag listing-seperator" id="算法">
+                    <span class="tag-text">算法</span>
         </span>
         
             <!-- <li class="listing-item">
@@ -439,9 +778,9 @@
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
             <div class="post-preview">
-                <a href="/2020/07/25/浮世三千/">
+                <a href="/2021/12/29/洗牌算法/">
                     <h2 class="post-title">
-                        浮世三千
+                        洗牌算法
                     </h2>
                     
                 </a>
@@ -481,14 +820,75 @@
                 <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
             </div>
             
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="洗牌算法">
+                    <span class="tag-text">洗牌算法</span>
+        </span>
+        
             <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
             <div class="post-preview">
-                <a href="/2020/07/25/老男孩/">
+                <a href="/2021/12/29/洗牌算法/">
                     <h2 class="post-title">
-                        老男孩
+                        洗牌算法
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Soul">
+                    <span class="tag-text">Soul</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2020/07/25/浮世三千/">
+                    <h2 class="post-title">
+                        浮世三千
                     </h2>
                     
                 </a>
@@ -575,493 +975,14 @@
                 <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
             </div>
             
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="scrapy">
-                    <span class="tag-text">scrapy</span>
-        </span>
-        
             <!-- <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li> -->
             <div class="post-preview">
-                <a href="/2022/01/29/scrapy框架学习笔记/">
+                <a href="/2020/07/25/老男孩/">
                     <h2 class="post-title">
-                        scrapy框架学习笔记
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy爬取网易新闻/">
-                    <h2 class="post-title">
-                        scrapy框架爬取网易新闻
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="爬虫">
-                    <span class="tag-text">爬虫</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy框架学习笔记/">
-                    <h2 class="post-title">
-                        scrapy框架学习笔记
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy爬取网易新闻/">
-                    <h2 class="post-title">
-                        scrapy框架爬取网易新闻
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="网易新闻">
-                    <span class="tag-text">网易新闻</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy爬取网易新闻/">
-                    <h2 class="post-title">
-                        scrapy框架爬取网易新闻
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="python">
-                    <span class="tag-text">python</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy框架学习笔记/">
-                    <h2 class="post-title">
-                        scrapy框架学习笔记
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="框架">
-                    <span class="tag-text">框架</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/29/scrapy框架学习笔记/">
-                    <h2 class="post-title">
-                        scrapy框架学习笔记
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="诗词">
-                    <span class="tag-text">诗词</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2022/01/26/临江仙·夜饮东坡醒复醉/">
-                    <h2 class="post-title">
-                        临江仙·夜饮东坡醒复醉 苏轼
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="算法">
-                    <span class="tag-text">算法</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2021/12/29/洗牌算法/">
-                    <h2 class="post-title">
-                        洗牌算法
-                    </h2>
-                    
-                </a>
-                <script>
-                    function async(u, c) {
-                        var d = document,
-                            t = 'script',
-                            o = d.createElement(t),
-                            s = d.getElementsByTagName(t)[0];
-                        o.src = u;
-                        if (c) {
-                            o.addEventListener('load', function(e) {
-                                c(null, e);
-                            }, false);
-                        }
-                        s.parentNode.insertBefore(o, s);
-                    }
-                </script>
-
-
-                <script src="/js/jquery.min.js"></script>
-
-                <script>
-                    if ($('#tag_cloud').length !== 0) {
-                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
-                            $.fn.tagcloud.defaults = {
-                                //size: {start: 1, end: 1, unit: 'em'},
-                                color: {
-                                    start: '#bbbbee',
-                                    end: '#0085a1'
-                                },
-                            };
-                            $('#tag_cloud a').tagcloud();
-                        })
-                    }
-                </script>
-                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-            </div>
-            
-    </div>
-    
-    <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="洗牌算法">
-                    <span class="tag-text">洗牌算法</span>
-        </span>
-        
-            <!-- <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li> -->
-            <div class="post-preview">
-                <a href="/2021/12/29/洗牌算法/">
-                    <h2 class="post-title">
-                        洗牌算法
+                        老男孩
                     </h2>
                     
                 </a>
@@ -1258,37 +1179,134 @@
             
     </div>
     
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="python">
+                    <span class="tag-text">python</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy框架学习笔记/">
+                    <h2 class="post-title">
+                        scrapy框架学习笔记
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
+    <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="框架">
+                    <span class="tag-text">框架</span>
+        </span>
+        
+            <!-- <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li> -->
+            <div class="post-preview">
+                <a href="/2022/01/29/scrapy框架学习笔记/">
+                    <h2 class="post-title">
+                        scrapy框架学习笔记
+                    </h2>
+                    
+                </a>
+                <script>
+                    function async(u, c) {
+                        var d = document,
+                            t = 'script',
+                            o = d.createElement(t),
+                            s = d.getElementsByTagName(t)[0];
+                        o.src = u;
+                        if (c) {
+                            o.addEventListener('load', function(e) {
+                                c(null, e);
+                            }, false);
+                        }
+                        s.parentNode.insertBefore(o, s);
+                    }
+                </script>
+
+
+                <script src="/js/jquery.min.js"></script>
+
+                <script>
+                    if ($('#tag_cloud').length !== 0) {
+                        async("https://haojen.github.io/js/jquery.tagcloud.js", function() {
+                            $.fn.tagcloud.defaults = {
+                                //size: {start: 1, end: 1, unit: 'em'},
+                                color: {
+                                    start: '#bbbbee',
+                                    end: '#0085a1'
+                                },
+                            };
+                            $('#tag_cloud a').tagcloud();
+                        })
+                    }
+                </script>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            
+    </div>
+    
                     </div>
         </div>
 
-        
-<footer class="footer">
-    <ul class="list-inline text-center">
-        
-        
+        <footer class="footer" style="color: #555;">
 
-        
-
-        
-
-        
-
-        
-
-    </ul>
     
-    <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
-        </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+            <p>
+                <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span>&nbsp;🐯</span>|
+                <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span>&nbsp; 👀</span>
+            </p>
+            <p style="line-height: 1.5rem;">
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">Hexo-AirCloud</a>
+
+            </p>
+            <p style="line-height: 1.5rem;">
+                晋ICP备19014491号 &copy; 2019-
+                2022 Created By Create Sun 🌤️
+            </p>
+            <p></p>
 </footer>
-
-
-
 
     </body>
 

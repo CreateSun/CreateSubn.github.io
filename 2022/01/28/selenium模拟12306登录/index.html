@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="永远相信美好的事情即将发生">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <title>
+        
+            selenium模拟12306登录 - 种太阳
+                
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+        
+<link rel="stylesheet" href="/css/gitment.css">
+
+            <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+            <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+            <!-- ga & ba script hoook -->
+            <script></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+    <body>
+
+        <div class="site-nav-toggle" id="site-nav-toggle">
+            <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+        </div>
+
+        <div class="index-about">
+            <i> 崎嵚历落从人笑，涟漪微漾伴疏狂 </i>
+        </div>
+
+        <div class="index-container">
+            
+                <div class="index-left">
+                    <div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/12138.png" />
+        </div>
+        <div class="name">
+            <i>Create Sun</i>
+        </div>
+        <ul class="list-inline text-center" style="padding-bottom: 1rem;">
+            
+                    
+                        <li style="background: #06f;">
+                            <a target="_blank" href="https://www.zhihu.com/people/la-la-la-chong-tai-yang-40">
+                                <span class="fa-stack fa-lg">
+                                     <i class="iconfont icon-zhihu"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+
+                            
+
+                                    
+
+                                            
+                                                <li style="background: #6e5494;">
+                                                    <a target="_blank" href="https://github.com/CreateSun">
+                                                        <span class="fa-stack fa-lg">
+                                    <i class="iconfont icon-github"></i>
+                                </span>
+                                                    </a>
+                                                </li>
+                                                
+
+                                                    
+
+        </ul>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                        <a href="/">
+                            <i class="iconfont icon-shouye1"></i>
+                            <span>主页</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/tags">
+                            <i class="iconfont icon-biaoqian1"></i>
+                            <span>标签</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/archives">
+                            <i class="iconfont icon-guidang2"></i>
+                            <span>存档</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/about/">
+                            <i class="iconfont icon-guanyu2"></i>
+                            <span>关于</span>
+                        </a>
+            </li>
+            
+                <li>
+                    <a id="search">
+                        <i class="iconfont icon-sousuo1"></i>
+                        <span>搜索</span>
+                    </a>
+                </li>
+                
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+            
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input" />
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+                        <div class="index-about-mobile">
+                            <i> 崎嵚历落从人笑，涟漪微漾伴疏狂 </i>
+                        </div>
+                </div>
+                
+                    <div class="index-middle">
+                        <!-- Main Content -->
+                        
+
+
+<div class="post-container">
+    <div class="post-title">
+        selenium模拟12306登录
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2022-01-28 00:12:49</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#python" title="python">python</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#selenium" title="selenium">selenium</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver <span class="keyword">import</span> ActionChains, ChromeOptions <span class="keyword">as</span> Options</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line">js = <span class="string">&#x27;return window.navigator.webdriver&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    实现无可视化界面</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">options = Options()</span><br><span class="line"><span class="comment"># options.add_argument(&#x27;--headless&#x27;)</span></span><br><span class="line"><span class="comment"># options.add_argument(&#x27;--disable-gpu&#x27;)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    实现规避检测</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">option_avoid = Options()</span><br><span class="line">option_avoid.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line">options.add_experimental_option(<span class="string">&#x27;useAutomationExtension&#x27;</span>, <span class="literal">False</span>)</span><br><span class="line">bro = webdriver.Chrome(chrome_options=options, options=option_avoid)</span><br><span class="line"><span class="comment"># 12306会通过获取window.navigator.webdriver属性判断是否为模拟浏览器</span></span><br><span class="line"><span class="comment"># 在加载阶段调用cdp(Chrome Devtool Protocol)抹掉该属性</span></span><br><span class="line">bro.execute_cdp_cmd(<span class="string">&quot;Page.addScriptToEvaluateOnNewDocument&quot;</span>, &#123;</span><br><span class="line">  <span class="string">&quot;source&quot;</span>: <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Object.defineProperty(navigator, &#x27;webdriver&#x27;, &#123;</span></span><br><span class="line"><span class="string">      get: () =&gt; undefined</span></span><br><span class="line"><span class="string">    &#125;)</span></span><br><span class="line"><span class="string">  &quot;&quot;&quot;</span></span><br><span class="line">&#125;)</span><br><span class="line">bro.get(<span class="string">&#x27;https://kyfw.12306.cn/otn/resources/login.html&#x27;</span>)</span><br><span class="line">username_input = bro.find_element(By.ID, <span class="string">&#x27;J-userName&#x27;</span>)</span><br><span class="line">password_input = bro.find_element(By.ID, <span class="string">&#x27;J-password&#x27;</span>)</span><br><span class="line">username_input.send_keys(<span class="string">&#x27;用户名xxxxx&#x27;</span>)</span><br><span class="line">password_input.send_keys(<span class="string">&#x27;密码xxxxx&#x27;</span>)</span><br><span class="line">login_btn = bro.find_element(By.ID, <span class="string">&#x27;J-login&#x27;</span>)</span><br><span class="line">login_btn.click()</span><br><span class="line">slide_modal = bro.find_element(By.ID, <span class="string">&#x27;modal&#x27;</span>)</span><br><span class="line">bro.execute_script(<span class="string">&#x27;document.title =&quot;测试&quot;&#x27;</span>)</span><br><span class="line">bro.execute_script(<span class="string">&#x27;document.body.appendChild(document.createElement(\&#x27;div\&#x27;))&#x27;</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(bro.execute_script(js))</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;./login.html&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    fp.write(bro.page_source)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        action = webdriver.ActionChains(bro)  <span class="comment"># 利用行为链，持续按住并拖拽</span></span><br><span class="line">        span = bro.find_element(By.ID, <span class="string">&#x27;nc_1_n1z&#x27;</span>)  <span class="comment"># 获取滑块</span></span><br><span class="line">        action.drag_and_drop_by_offset(span, <span class="number">330</span>, <span class="number">0</span>).perform()  <span class="comment"># 按住并拖动 &gt;300px即可，选用330绰绰有余</span></span><br><span class="line">        <span class="comment"># action.click_and_hold(span).perform()</span></span><br><span class="line">        <span class="comment"># action.move_by_offset(xoffset=300,yoffset=0).perform() 另一张拖动</span></span><br><span class="line">        action.release()  <span class="comment"># 释放</span></span><br><span class="line">        <span class="built_in">print</span>(bro.execute_script(js))</span><br><span class="line">        time.sleep(<span class="number">2</span>)</span><br><span class="line">        a = bro.find_element(By.ID, <span class="string">&#x27;nc_1_refresh1&#x27;</span>)  <span class="comment"># 查找刷新按钮，如果没有说明登录成功，执行except跳出循环</span></span><br><span class="line">        a.click()  <span class="comment"># 如果刚刚滑动失败，则点击刷新，重新滑动</span></span><br><span class="line">        time.sleep(<span class="number">4</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(e)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+        </div>
+
+        <footer class="footer" style="color: #555;">
+
+    
+            <p>
+                <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span>&nbsp;👀</span>|
+                <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span>&nbsp;🐯</span>
+            </p>
+            <p style="line-height: 1.5rem;">
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">Hexo-AirCloud</a>
+
+            </p>
+            <p style="line-height: 1.5rem;">
+                晋ICP备19014491号 &copy; 2019-
+                2022 Created By Create Sun 🌤️
+            </p>
+            <p></p>
+</footer>
+
+    </body>
+
+    <script>
+        // We expose some of the variables needed by the front end
+        window.hexo_search_path = "search.json"
+        window.hexo_root = "/"
+        window.isPost = "true"
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    
+<script src="/js/index.js"></script>
+
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        
+                    
+
+                            
+
+</html>

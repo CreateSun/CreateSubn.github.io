@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="永远相信美好的事情即将发生">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <title>
+        
+            scrapy框架学习笔记 - 种太阳
+                
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+        
+<link rel="stylesheet" href="/css/gitment.css">
+
+            <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+            <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+            <!-- ga & ba script hoook -->
+            <script></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+    <body>
+
+        <div class="site-nav-toggle" id="site-nav-toggle">
+            <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+        </div>
+
+        <div class="index-about">
+            <i> 崎嵚历落从人笑，涟漪微漾伴疏狂 </i>
+        </div>
+
+        <div class="index-container">
+            
+                <div class="index-left">
+                    <div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/12138.png" />
+        </div>
+        <div class="name">
+            <i>Create Sun</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                        <a href="/">
+                            <i class="iconfont icon-shouye1"></i>
+                            <span>主页</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/tags">
+                            <i class="iconfont icon-biaoqian1"></i>
+                            <span>标签</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/archives">
+                            <i class="iconfont icon-guidang2"></i>
+                            <span>存档</span>
+                        </a>
+            </li>
+            <li >
+                        <a href="/about/">
+                            <i class="iconfont icon-guanyu2"></i>
+                            <span>关于</span>
+                        </a>
+            </li>
+            
+                <li>
+                    <a id="search">
+                        <i class="iconfont icon-sousuo1"></i>
+                        <span>搜索</span>
+                    </a>
+                </li>
+                
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#scrapy%E6%A1%86%E6%9E%B6"><span class="toc-text">scrapy框架</span></a></li></ol>
+</div>
+            
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input" />
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+                        <div class="index-about-mobile">
+                            <i> 崎嵚历落从人笑，涟漪微漾伴疏狂 </i>
+                        </div>
+                </div>
+                
+                    <div class="index-middle">
+                        <!-- Main Content -->
+                        
+
+
+<div class="post-container">
+    <div class="post-title">
+        scrapy框架学习笔记
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2022-01-29 19:22:36</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#scrapy" title="scrapy">scrapy</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#爬虫" title="爬虫">爬虫</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#python" title="python">python</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#框架" title="框架">框架</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="scrapy框架"><a href="#scrapy框架" class="headerlink" title="scrapy框架"></a>scrapy框架</h2><ul>
+<li><p>什么是框架<br>  集成了很多功能，并且具有很强的通用性的项目模板</p>
+</li>
+<li><p>如何学习框架</p>
+</li>
+<li><p>什么是scrapy</p>
+<ul>
+<li>爬虫中封装好的“明星”框架，封装程度高，使用频率高</li>
+<li>功能：<ul>
+<li>高性能持久化存储</li>
+<li>异步数据下载</li>
+<li>高性能数据解析</li>
+<li>分布式</li>
+</ul>
+</li>
+<li>基本使用<ul>
+<li>环境安装<ul>
+<li>mac、Linux: <code>pip install scrapy</code></li>
+<li>windows:<ul>
+<li><code>pip install wheel</code></li>
+<li>下载安装twisted</li>
+<li><code>pip install pywin32</code></li>
+<li><code>pip install scrapy</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>创建工程：<code>scrapy startproject xxxPro</code></li>
+<li>执行工程：<code>scrapy crawl sipderName</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数据解析</p>
+<ul>
+<li><code>response.xpath()</code></li>
+<li><code>extract()</code></li>
+<li><code>extract_first()</code></li>
+</ul>
+</li>
+<li><p>持久化存储</p>
+<ul>
+<li>基于终端指令：<ul>
+<li>要求：只可以将parse()方法的返回值存储到本地的文本文件中</li>
+<li>步骤：将parse中需要存储的数据包装起来并作为返回值进入return</li>
+<li>注意：持久化对应的文本文件类型只能是：json、csv、jl、jsonlines、marshal、pickle等</li>
+<li>好处：简洁、高效、便捷</li>
+<li>缺点：局限性强，数据只能存储为指定后缀的文本文件，且只能存储parse封装好的指定数据</li>
+</ul>
+</li>
+<li>基于管道：<ul>
+<li>编码流程：<ul>
+<li>数据解析</li>
+<li>将解析的数据封装存储到item类型的对象</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>手动发送请求</p>
+<ul>
+<li><code>yield scrapy.Request(url, callback)</code></li>
+</ul>
+</li>
+<li><p>五大核心组件</p>
+<ul>
+<li>引擎（接收数据流&amp;触发事务）<ul>
+<li>引擎将请求对象发送给调度器的过滤器</li>
+<li>从调度器的队列中获取请求对象并发送给下载器</li>
+<li>将Response发送给Spider的parse</li>
+<li>接受parse解析好的数据并发送给管道</li>
+</ul>
+</li>
+<li>爬虫类（Spider）<ul>
+<li>产生url，封装为请求对象发送给 引擎 ，并进行请求发送</li>
+<li>调用parse进行数据解析并发送给引擎</li>
+</ul>
+</li>
+<li>管道<ul>
+<li>接收引擎发送的解析好的数据进行持久化存储</li>
+</ul>
+</li>
+<li>下载器<ul>
+<li>进行数据下载获取Response</li>
+<li>提交Response至引擎</li>
+</ul>
+</li>
+<li>调度器<ul>
+<li>过滤器<br>  对重复的请求对象进行去重，将去重后的请求对象发送到队列</li>
+<li>队列<br>问题：引擎是如何触发事务的？</li>
+<li>引擎通过接收到的不同数据流类型判断事务类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>请求传参</p>
+<ul>
+<li>使用场景：爬取解析的数据不在同一张页面中。（深度爬取）</li>
+<li>需求：爬取Boss直聘岗位名称与岗位描述</li>
+</ul>
+</li>
+<li><p>图片数据爬取之ImagesPipeline</p>
+<ul>
+<li>基于字符串和基于图片的区别<ul>
+<li>字符串： 只需要基于xpath进行解析且提交管道并进行持久化</li>
+<li>图片： xpath解析出图片src的属性值，单独对图片地址发起请求获取图片二进制类型的数据</li>
+</ul>
+</li>
+<li>ImagesPipeline:<ul>
+<li>只需要将img的src的属性值进行解析，提交到管道，管道就会对图片的src进行请求发送获取图片的二进制数据，且还会帮我们进行持久化存储</li>
+<li>需求：爬取站长素材的高清图片</li>
+<li>使用流程：<ul>
+<li>解析图片地址（懒加载）</li>
+<li>将存储图片地址的item提交到指定的管道类</li>
+<li>在管道文件中定制一个基于ImagesPipeline的管道类<ul>
+<li><code>get_media_request()</code></li>
+<li><code>file_path()</code></li>
+<li><code>item_completed()</code></li>
+</ul>
+</li>
+<li>在配置文件中：<ul>
+<li>指定文件存储目录: <code>IMAGES_STORE = &#39;[path]&#39;</code></li>
+<li>指定开启的管道： 自定制的管道类</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>遇到的问题：<ul>
+<li>item提交给管道后，管道不接收图片，死活没有反应: <code>INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)</code></li>
+<li>LOG_LEVEL = ‘DEBUG’后看到一条警告:<br><code>WARNING: Disabled ImgsPipeline: ImagesPipeline requires installing Pillow 4.0.0 or later</code>于是就赶紧安装了Pillow, 问题得以解决</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>中间件</p>
+<ul>
+<li>爬虫中间件</li>
+<li>下载中间件<ul>
+<li>位置：引擎和下载器之间</li>
+<li>功能：批量拦截整个工程中所有的请求和响应</li>
+<li>拦截请求：<ul>
+<li>进行UA伪装（可以对指定的请求进行专门的UA伪装）</li>
+<li>代理IP的设定</li>
+</ul>
+</li>
+<li>拦截响应：<ul>
+<li>篡改响应数据、对象</li>
+<li>需求：爬取网易新闻数据（标题+内容）<ol>
+<li>通过首页解析出五大板块对应详情页的URL（直接爬取）</li>
+<li>板块对应的新闻标题列表（动态加载）</li>
+<li>通过解析每一条新闻详情页URL，获取详情页源码解析出新闻内容（直接爬取）</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+        </div>
+
+        
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+    </body>
+
+    <script>
+        // We expose some of the variables needed by the front end
+        window.hexo_search_path = "search.json"
+        window.hexo_root = "/"
+        window.isPost = "true"
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    
+<script src="/js/index.js"></script>
+
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        
+                    
+
+                            
+
+</html>

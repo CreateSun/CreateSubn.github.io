@@ -32,7 +32,10 @@ canvas {
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
-    z-index: 99;
+}
+
+.danmu-area p {
+    -webkit-background-clip: text;
 }
 
 #entrance {

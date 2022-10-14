@@ -11,5 +11,33 @@
     <input id="carama" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
     input id="noCamera" accept="image/*" type="file" class="" aria-hidden="true">
     <input  id="noCamera" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
+    
+    
+    <script>
+        const initVideo = () => {
+  let constraints = {
+    video: { width: 375, height: 813 },
+    //audio: false
+  }
+  try {
+    //获得video摄像头
+    navigator.mediaDevices
+      .getUserMedia(constraints)
+      .then((mediaStream) => {
+        console.log(mediaStream)
+        // @ts-ignore
+        mediaStreamTrack = typeof mediaStream.stop === 'function' ? mediaStream : mediaStream.getTracks()[1]
+        mediaStreamTrack = mediaStream.getVideoTracks()
+        videoRef.current.srcObject = mediaStream
+        videoRef.current.play()
+      })
+      .catch((err) => {
+        console.log('调用摄像头失败：仅允许安全来源或设备被占用')
+      })
+  } catch (e) {
+    console.log(e)
+  }
+}
+    </script>
 </body>
 </html>

@@ -32,6 +32,7 @@
         videoRef.current.play()
       })
       .catch((err) => {
+        console.log(err)
         console.log('调用摄像头失败：仅允许安全来源或设备被占用')
       })
   } catch (e) {

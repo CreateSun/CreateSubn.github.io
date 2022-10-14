@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
+
 <body>
     input id="carama" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
     <input id="carama" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
     input id="noCamera" accept="image/*" type="file" class="" aria-hidden="true">
-    <input  id="noCamera" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
-    
-    
+    <input id="noCamera" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
+
+    <div id="app"></div>
+
     <script>
+        const e = React.createElement;
+        let videoRef = React.createRef();
+
+        class VideoBox extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+
+            render() {
+                return e(
+                    'video',
+                    { ref: videoRef },
+                    ''
+                );
+            }
+        }
+        const root = document.querySelector('#app')
+        const reactRoot = ReactDOM.createRoot(root)
+        reactRoot.render(e(VideoBox))
+
         const initVideo = () => {
-  let constraints = {
-    video: { width: 375, height: 813 },
-    //audio: false
-  }
-  try {
-    //获得video摄像头
-    navigator.mediaDevices
-      .getUserMedia(constraints)
-      .then((mediaStream) => {
-        console.log(mediaStream)
-        // @ts-ignore
-        mediaStreamTrack = typeof mediaStream.stop === 'function' ? mediaStream : mediaStream.getTracks()[1]
-        mediaStreamTrack = mediaStream.getVideoTracks()
-        videoRef.current.srcObject = mediaStream
-        videoRef.current.play()
-      })
-      .catch((err) => {
-        console.log(err)
-        console.log('调用摄像头失败：仅允许安全来源或设备被占用')
-      })
-  } catch (e) {
-    console.log(e)
-  }
-}
-        
+            let constraints = {
+                video: { width: 375, height: 813 },
+                //audio: false
+            }
+            try {
+                //获得video摄像头
+                navigator.mediaDevices
+                    .getUserMedia(constraints)
+                    .then((mediaStream) => {
+                        console.log(mediaStream)
+                        // @ts-ignore
+                        mediaStreamTrack = typeof mediaStream.stop === 'function' ? mediaStream : mediaStream.getTracks()[1]
+                        mediaStreamTrack = mediaStream.getVideoTracks()
+                        console.log(videoRef)
+                        videoRef.current.srcObject = mediaStream
+                        videoRef.current.play()
+                    })
+                    .catch((err) => {
+                        console.log(err)
+                        console.log('调用摄像头失败：仅允许安全来源或设备被占用')
+                    })
+            } catch (e) {
+                console.log(e)
+            }
+        }
         initVideo()
     </script>
 </body>
+
 </html>

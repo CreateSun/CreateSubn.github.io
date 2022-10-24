@@ -82,6 +82,7 @@
     </script>
 
     <script>
+        console.log('页面重新加载', window.location.href, window.location.hash)
         window.onload = function () {
             alert('页面刷新')
         }
@@ -93,6 +94,8 @@
                 document.body.appendChild(tagA);
                 const res = tagA.click();
             } catch (e) {
+                console.log(e)
+                console.log(res)
                 alert(e)
                 alert(res)
             }

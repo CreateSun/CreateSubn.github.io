@@ -8,6 +8,7 @@
     <title>Document</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/callapp-lib"></script>
 </head>
 
 <body>
@@ -16,9 +17,19 @@
     input id="noCamera" accept="image/*" type="file" class="" aria-hidden="true">
     <input id="noCamera" capture="camera" accept="image/*" type="file" class="" aria-hidden="true">
 
-    <a href="corpctrip://corp.ctrip.com?url=https://ct.ctrip.fat4.qa.nt.ctripcorp.com/m/dy_3_MyOrder/OrderList/OrderList">拉起商旅APP订单列表</a>
+    <a
+        href="corpctrip://corp.ctrip.com?url=https://ct.ctrip.fat4.qa.nt.ctripcorp.com/m/dy_3_MyOrder/OrderList/OrderList">拉起商旅APP订单列表</a>
 
     <div id="app"></div>
+    <div id="app-2">
+        <button onclick="lib()">
+            callapp-lib 唤端
+        </button>
+        <button
+            onclick="evokeByTagA(`corpctrip:\/\/corp.ctrip.com?url=https:\/\/ct.ctrip.fat4.qa.nt.ctripcorp.com\/m\/dy_3_MyOrder\/OrderList\/OrderList`)">
+            schema - A Tag
+        </button>
+    </div>
 
     <script>
         const e = React.createElement;
@@ -69,6 +80,37 @@
         }
         initVideo()
     </script>
+
+    <script>
+        function evokeByTagA(uri) {
+            const tagA = document.createElement('a');
+            tagA.setAttribute('href', uri);
+            tagA.style.display = 'none';
+            document.body.appendChild(tagA);
+            tagA.click();
+        }
+        const options = {
+            appstore: 'https://itunes.apple.com/app/id885401020',
+            scheme: {
+                protocol: 'corpctrip',
+                host: 'corp.ctrip.com',
+                port: '80'
+            },
+            fallback: '#failed'
+        };
+        const callLib = new CallApp(options);
+
+        const lib = function () {
+            callLib.open({
+                param: {
+                    url: 'https://ct.ctrip.fat4.qa.nt.ctripcorp.com/m/dy_3_MyOrder/OrderList/OrderList'
+                }
+            })
+        }
+
+
+    </script>
+
 </body>
 
 </html>

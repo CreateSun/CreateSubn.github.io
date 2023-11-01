@@ -51,13 +51,13 @@
     }
 
     function createFoldButton(fold) {
-        return '<span class="fold">' + (fold === 'unfolded' ? '<i class="fas fa-angle-down"></i>' : '<i class="fas fa-angle-right"></i>') + '</span>';
+        return '<span class="fold">' + (fold === 'unfolded' ? '<i class="iconfont icon-angle-down"></i>' : '<i class="iconfont icon-angle-right"></i>') + '</span>';
     }
 
     $('figure.highlight table').wrap('<div class="highlight-body">');
-    if (typeof config !== 'undefined'
-        && typeof config.article !== 'undefined'
-        && typeof config.article.highlight !== 'undefined') {
+    if (typeof config !== 'undefined' &&
+        typeof config.article !== 'undefined' &&
+        typeof config.article.highlight !== 'undefined') {
 
         $('figure.highlight').addClass('hljs');
         $('figure.highlight .code .line span').each(function() {
@@ -89,7 +89,7 @@
         if (typeof ClipboardJS !== 'undefined' && clipboard) {
             $('figure.highlight').each(function() {
                 const id = 'code-' + Date.now() + (Math.random() * 1000 | 0);
-                const button = '<a href="javascript:;" class="copy" title="Copy" data-clipboard-target="#' + id + ' .code"><i class="fas fa-copy"></i></a>';
+                const button = '<a href="javascript:;" class="copy" title="Copy" data-clipboard-target="#' + id + ' .code"><i class="iconfont icon-copy"></i></a>';
                 $(this).attr('id', id);
                 $(this).find('figcaption div.level-right').append(button);
             });

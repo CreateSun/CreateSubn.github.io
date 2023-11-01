@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>英雄联盟活动hover特效</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-image: url("./bg3.jpg");
+	}
+	.Row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	} 
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.item-out {
+		width: 280px;
+		overflow: hidden;
+		padding-top: 20px;
+	}
+	.item {
+		height: 300px;
+		width: 260px;
+		line-height: 0;
+		position: relative;
+		border: 3px solid #ddd;
+		margin: 10px;
+		background-color: black;
+		cursor: pointer;
+		border-image: linear-gradient(#ce9654, black, #ce9654) 20 20;
+		/*transition: 0.3s all;*/
+		box-sizing: border-box;
+		transition: 0.2s transform;
+		overflow: hidden;
+		padding: 1px;
+		cursor: pointer;
+	}
+	.item:hover {
+		transform: translateY(-15px);
+		border-width: 4px;
+		/*fill: purpleScale()*/
+		padding: 0;
+	}
+	.item:hover+div {
+		transform: translateY(0);
+	}
+	.item:hover .mask {
+		opacity: 0.2;
+	}
+	.item img {
+		transition: 0.2s all;
+		display: block;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		border: 0;
+	}
+	.top {
+		z-index: 1;
+		position: absolute;
+		text-align: center;
+		height: 30px;
+		left: 50%;
+		width: 50%;
+		line-height: 30px;
+		transform: translateX(-50%);
+		perspective: 100px;
+	}
+	.video-rotate {
+		margin-top: -20px;
+		height: 60px;
+		transform: rotateX(-40deg);
+		background-color: black;
+		width: 100%;
+	}
+	.rotate {
+		margin-top: -20px;
+		height: 60px;
+		transform: rotateX(-40deg);
+		background-color: #ce9654;
+		width: 100%;
+	}
+	.top-plain {
+		z-index: 1;
+		display: inline-block;
+		width: 60%;
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: black;
+		line-height: 20px;
+	}
+	.mask {
+		transition: 0.2s all;
+		opacity: 0;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		/*background-color: rgba(250, 16, 226, 0.1);*/
+		background-color: white;
+	}
+	.blur {
+		height: 0px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		border-radius: 50% / 100% 100% 0 0;
+		box-shadow: 0 -10px 50px 20px #6d7af1;
+		position: relative;
+		transform: translateY(100px);
+	}
+	.btn {
+		border: 1px solid #a35696;
+		padding: 10px;
+		position: relative;
+		color: #AAA;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		width: 25%;
+		cursor: pointer;
+		font-size: 0.8em;
+		font-family: "黑体"
+	}
+	.btn:hover {
+		border-color: #a5178d;
+	}
+	.btn:before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: -100%;
+		background-color: #b2339c;
+		transition: 0.3s all;
+		cursor: pointer;
+		z-index: -1;
+		top: 0;
+	}
+	.btn:hover:before {
+		left: 0;
+	}
+	.triangle {
+		position: absolute;
+		left: -1px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 0;
+    	height: 0;
+    	border-top: 5px solid transparent;
+    	border-left: 10px solid white;
+    	border-bottom: 5px solid transparent;
+    	color: #AAAAAA;
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	.font {
+		color: #ce9654;
+		text-align: left;
+	}
+	.left {
+		float: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+	}
+	.right{
+		float: right;
+		width: 50%;
+	}
+	.video-out {
+		cursor: pointer;
+		box-sizing: border-box;
+		background-color: black;
+		margin: 5px;
+		padding: 3px;
+		border: 1.5px solid #AAA;
+		/*perspective: 100px;*/
+		position: relative;
+		overflow: hidden;
+	}
+	.video-out:hover .action {
+		height: 110px;
+		width: 110px;
+		filter: brightness(1.8);
+	}
+	.clearfix:after,.clearfix:before{
+        content: "";
+        display: table;
+    }
+    .clearfix:after{
+        clear: both;
+    }
+    .clearfix{
+        *zoom: 1;
+    }
+    .video {
+    	vertical-align: middle;
+    	height: 100%;
+    	width: 100%;
+    	outline: none;
+    }
+    .action {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: 0 auto;
+		transform: translate(-50%, -50%);
+		border: 1px solid #20153d;
+		height: 90px;
+		width: 90px;
+		border-radius: 50%;
+		transition: 0.3s all;
+		text-align: center;
+		line-height: 100%;
+		display: flex;
+		z-index: 1;
+		justify-content: center;
+		align-items: center;
+	}
+	.action .action-bg {
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		background-color: #20153d;
+		text-align: center;
+		line-height: 100%;
+	}
+	.action-icon {
+		color: white;
+		line-height: 80px;
+		height: 100%;
+	}
+	.item-plain {
+		position: absolute;
+		bottom: 7px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 15px;
+		line-height: 15px;
+		font-size: 1em;
+		font-family: "黑体";
+		color: #ce9654;
+		text-align: center;
+		width: 100%;
+	}
+</style>
+
+<body>
+	<div style="margin-top: 20px;"></div>
+	<div class="container clearfix" style="height: 300px;">
+		<div class="left clearfix" style="width: 50%;">
+			<p class="font" style="font-size: 15px;margin-bottom: 20px;font-family: '宋体'">光明之末</p>
+			<p class="font" style="font-size: 2em;margin-bottom: 30px;">银河战争〔2020〕</p>
+			<p style="color: white; width: 80%;text-align: center;margin-bottom: 30px;">驾驭黑暗或支持光明—全取决于你。银河尽在你的掌握之中。决定吧</p>
+			<div class="btn">
+				<div class="triangle">
+					</div>
+				<a href="https://yz.lol.qq.com/zh_CN/story/ambitions-embrace/">&nbsp阅读拉克丝的故事</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="video-out">
+					<div id="action" class="action" onclick="play()">
+						<div class="action-bg">
+							<p class="action-icon">▶</p>
+						</div>
+					</div>
+					<script>
+
+						const $ = (item) => document.getElementById(item)
+						function play(argument) {
+							$("action").style.display = "none"
+							$("video").controls = "controls"
+							$("video").play()
+						}
+					</script>
+				<div class="top" style="width: 30%">
+					<div class="video-rotate" ></div>
+					<p class="top-plain" style="color: white; font-weight: bolder;">事件宣传片</p>
+				</div>
+				<video id="video" src="./video.mp4" poster="./cover.png" preload="meta" class="video" loop="loop" />
+			</div>
+		</div>
+	</div>
+	<div class="container Row" style="margin-top: 20px; ">
+		
+		<div class="item-out">
+			<div class="item" style="width: 200px;">
+			<div class="mask"></div>
+			<div class="top">
+				<div class="rotate"></div>
+				<p class="top-plain">皮肤</p>
+			</div>
+			<img src="./legends-1.jpg" alt="">
+			<p class="item-plain">耀星女王 拉克丝</p>
+			
+		</div>
+			<div class="blur">
+				
+			</div>
+		</div>
+		
+		<div class="item-out">
+			<div class="item" style="width: 200px;">
+			<div class="mask"></div>
+			<div class="top">
+				<div class="rotate"></div>
+				<p class="top-plain">皮肤</p>
+			</div>
+			<img src="./legends-1.jpeg" alt="">
+			<p class="item-plain">暗星女王 拉克丝</p>
+			
+		</div>
+			<div class="blur">
+				
+			</div>
+		</div>
+
+		<div class="item-out">
+			<div class="item">
+			<div class="mask"></div>
+			<div class="top">
+				<div class="rotate"></div>
+				<p class="top-plain">礼包</p>
+			</div>
+			<img src="./zlas.png" alt="">
+			<p class="item-plain">暗星 泽拉斯礼包</p>
+			
+		</div>
+			<div class="blur">
+				
+			</div>
+		</div>
+		
+		<div class="item-out">
+			<div class="item">
+			<div class="mask"></div>
+			<div class="top">
+				<div class="rotate">
+					
+				</div>
+				<p class="top-plain">礼包</p>
+			</div>
+			<img src="./modkaisa.png" alt="">
+			<p class="item-plain">暗星 莫德凯撒礼包</p>
+		</div>
+		<div class="blur">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

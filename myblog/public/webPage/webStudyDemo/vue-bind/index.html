@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue双向绑定</title>
+</head>
+<body>
+    <div id="app">
+        <label>用户名：
+            <input v-model="name" type="text" name="username" id="username">
+        </label><br>
+        <label>年&emsp;龄：
+            <input v-model="info.age" type="text" name="age" id="age">
+        </label><br>
+        <label>身&emsp;高：
+            <input v-model="info.height" type="text" name="height" id="height">
+        </label>
+        <p> 用户名： {{ name }} </p>
+        <p>年龄： {{info.age}}</p>
+        <p>身高： {{info.height}}cm</p>
+    </div>
+</body>
+<script src="./vue.js"></script>
+<script>
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            name: "啦啦啦种太阳",
+            info: {
+                age: 18,
+                height: 170
+            }
+        }
+    })
+</script>
+</html>

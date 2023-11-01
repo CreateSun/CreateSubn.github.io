@@ -1,0 +1,98 @@
+<style>
+    .poetry-container {
+        background-color: rgba(255, 248, 220, 0.5);
+        padding-top: 43px;
+        text-align: center;
+    }
+    
+    .poetry-container .poetry-content {
+        writing-mode: vertical-lr;
+        border-radius: 15px;
+        -ms-writing-mode: tb-lr;
+        margin: 0 auto;
+        overflow: auto;
+        max-width: 90%;
+        max-height: 60vh;
+        display: inline-block;
+        text-align: left;
+        padding: 5px 15px 30px;
+    }
+    
+    .poetry-container .poetry-content h2 {
+        color: #fff;
+        font-family: STkaiti;
+        font-size: 34px;
+        text-indent: 65px;
+        float: left;
+        margin-top: 0;
+    }
+    
+    .poetry-container .poetry-content h2 span {
+        background-color: black;
+        padding: 2px 1px;
+        border-radius: 3px;
+    }
+    
+    .poetry-container .poetry-content p {
+        clear: both;
+        font-size: 24px;
+        font-family: STSong;
+        letter-spacing: 8px;
+        text-shadow: 0 0 1px rgba(15, 15, 15, .3);
+        text-indent: 63px;
+        line-height: 40px;
+        margin: 0;
+    }
+    /* ipad */
+    
+    @media screen and (max-width: 768px) {
+        .poetry-container .poetry-content {
+            max-height: 70;
+            max-width: 100%;
+            margin: 80px auto 0;
+            padding-bottom: 10px;
+            writing-mode: horizontal-tb;
+        }
+        .poetry-container .poetry-content p {
+            font-size: 16px;
+            text-indent: 46px;
+            line-height: 33px;
+            letter-spacing: 6px;
+            font-family: unset;
+        }
+        .poetry-container .poetry-content h2 {
+            margin-right: 6px;
+            font-size: 22px;
+            text-indent: 24px;
+            font-family: unset;
+        }
+        .poetry-container .poetry-content h2 span {
+            padding: 8px 5px;
+        }
+    }
+    /*手机屏幕*/
+    
+    @media screen and (max-width: 400px) {
+        .poetry-container .poetry-content {
+            max-height: 410px;
+            padding-bottom: 20px;
+        }
+        .poetry-container .poetry-content p {
+            line-height: 30px;
+            letter-spacing: 3px;
+        }
+    }
+</style>
+<div class="poetry-container">
+    <!--主内容-->
+    <div class="poetry-content">
+        <h2>
+            <span>
+                    <%= page.title %>
+                </span>
+        </h2>
+        <%- page.content %>
+    </div>
+
+
+</div>
